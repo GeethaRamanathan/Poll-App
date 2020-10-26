@@ -1,0 +1,7 @@
+{{question.question}}
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{choice.choice}} -  {{choice.vote_count}}</li>
+{% endfor %}
+</ul>
